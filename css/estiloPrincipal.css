@@ -1,0 +1,285 @@
+html {
+  height: 100%;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: var(--cor-header-footer);
+  padding: 25px;
+  font-weight: bold;
+  font-size: larger;
+  border: 1px solid var(--cor-borda-cartao);
+}
+
+footer {
+  background-color: var(--cor-header-footer);
+  border: 1px solid var(--cor-borda-cartao);
+  padding: 1px;
+  text-align: center;
+  margin-bottom: -260px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  min-height: 100vh;
+  box-sizing:border-box;
+}
+
+.container-esquerda {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.container-interno {
+  position: relative;
+  flex: 1.5;
+  padding-right: 1rem;
+  overflow-y: auto;
+  max-height: 100%;
+  width: 100%;
+  border: solid 1px var(--cor-borda-cartao);
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  margin-right: 5px;
+}
+
+.container-interno p {
+  width: 95%;
+}
+
+.foto-perfil {
+  border-radius: 50%;
+  width: var(--tamanho-foto);
+  height: var(--tamanho-foto);
+  object-fit: cover;
+  margin: 0 auto;
+  border: 1.2px solid var(--cor-borda-cartao);
+}
+
+.titulo-principal {
+  font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--cor-texto);
+}
+
+.sub-titulo {
+  font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  text-align: center;
+  margin-left: -182px;
+  margin-top: -45px;
+  font-size: 1.05rem;
+  color: var(--cor-texto);
+}
+
+.titulo-secao {
+  font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  text-align: center;
+  margin-left: -122px;
+  margin-top: -5px;
+  font-size: 1.1rem;
+}
+
+.font-README-GitHub {
+  font-family: "Monaspace Neon", ui-monospace, SFMono-Regular, SF Mono, Menlo,
+    Consolas, Liberation Mono, monospace !important;
+  font-size: 1rem !important;
+}
+
+hr {
+  margin-top: 35px;
+  color: var(--cor-borda-cartao);
+}
+
+#botao-linkedin {
+  text-decoration: none;
+  background-color: var(--cor-botao-linkedin);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+#botao-linkedin:hover {
+  font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  background-color: var(--cor-botao-linkedin-hover);
+}
+
+#botao-github {
+  text-decoration: none;
+  background-color: var(--cor-botao-github);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+#botao-github:hover {
+  font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  background-color: var(--cor-botao-github-hover);
+}
+
+#botao-gmail {
+  text-decoration: none;
+  background-color: var(--cor-botao-gmail);
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  margin-right: 10px;
+}
+
+#botao-gmail:hover {
+  font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  background-color: var(--cor-botao-gmail-hover);
+}
+
+#botao-linkedin,
+#botao-gmail,
+#botao-github {
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.divisao-botoes {
+  margin-top: 25px;
+}
+
+.habilidades-container {
+  grid: 2/2;
+  display: flex;
+  gap: 150px;
+}
+
+/* Estilização da barra de rolagem */
+.container-interno::-webkit-scrollbar {
+  width: 8px;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.container-interno::-webkit-scrollbar-track {
+  background: var(--cor-fundo);
+}
+
+.container-interno::-webkit-scrollbar-thumb {
+  background: var(--cor-borda-cartao);
+  border-radius: 4px;
+}
+
+.botao-sobre-mim {
+  position: absolute;
+  top: 41px;
+  right: 110px;
+  color:var(--cor-texto);
+  padding: 4px 6px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.botao-sobre-mim:hover {
+  background-color: var(--cor-botao-padrao-hover);
+  transition: all 0.3s ease;
+}
+
+.botao-projetos {
+  position: absolute;
+  top: 41px;
+  right: 220px;
+  color: var(--cor-texto);
+  padding: 4px 6px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.botao-projetos:hover {
+  background-color: var(--cor-botao-padrao-hover);
+  transition: all 0.3s ease;
+}
+
+.botao-habilidades {
+  position: absolute;
+  top: 41px;
+  right: 310px;
+  color: var(--cor-texto);
+  padding: 4px 15px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.botao-habilidades:hover {
+  background-color: var(--cor-botao-padrao-hover);
+  transition: all 0.3s ease;
+}
+
+/* Botão para voltar ao topo */
+#botaoTopo {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--cor-borda-cartao);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+#botaoTopo:hover {
+  transform: translateY(-3px);
+}
+
+#botaoTopo.mostrar {
+  display: flex;
+}
